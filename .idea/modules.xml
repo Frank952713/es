@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ea-jd/ea-jd.iml" filepath="$PROJECT_DIR$/ea-jd/ea-jd.iml" />
       <module fileurl="file://$PROJECT_DIR$/es-api/es-api.iml" filepath="$PROJECT_DIR$/es-api/es-api.iml" />
     </modules>
   </component>

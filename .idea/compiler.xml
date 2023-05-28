@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ea-jd" />
         <module name="es-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ea-jd" target="1.8" />
       <module name="es-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ea-jd" options="-parameters" />
       <module name="es-api" options="-parameters" />
     </option>
   </component>
