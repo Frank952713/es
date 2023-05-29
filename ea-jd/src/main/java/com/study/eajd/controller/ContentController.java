@@ -16,16 +16,16 @@ public class ContentController {
     @Autowired
     private ContentService contentService;
 
-    @GetMapping("/parse/{keywords}")
-    public Boolean parse(@PathVariable("keywords") String keywords) throws Exception {
-        return contentService.parseContent(keywords);
+    @GetMapping("/parse/{keyword}")
+    public Boolean parse(@PathVariable("keyword") String keyword) throws Exception {
+        return contentService.parseContent(keyword);
     }
 
-    @GetMapping("/search/{keywords}/{pageNo}/{pageSize}")
-    public List<Map<String, Object>> search(@PathVariable("keywords") String keywords,
+    @GetMapping("/search/{keyword}/{pageNo}/{pageSize}")
+    public List<Map<String, Object>> search(@PathVariable("keyword") String keywords,
                                             @PathVariable("pageNo") int pageNo,
                                             @PathVariable("pageSize") int pageSize) throws Exception {
-        return contentService.searchPage(keywords, pageNo, pageSize);
+        return contentService.searchHighlightPage(keywords, pageNo, pageSize);
     }
 
 }
